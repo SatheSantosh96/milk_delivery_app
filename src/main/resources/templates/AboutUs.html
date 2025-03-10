@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kapila Dairy Farms</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0fff4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #8A2BE2;
+            color: white;
+        }
+        .logo img {
+            width: 80px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background: #8A2BE2;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #6B24B2;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #8A2BE2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #6B24B2;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #8A2BE2;
+            color: white;
+        }
+        
+        /* About page specific styles */
+        .page-banner {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/dairy-farm.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .page-banner h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .about-section {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .about-text {
+            flex: 2;
+            min-width: 300px;
+        }
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            color: #8A2BE2;
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #8A2BE2;
+        }
+        .values-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .value-card {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .value-icon {
+            font-size: 2.5rem;
+            color: #8A2BE2;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            nav {
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav a {
+                margin: 5px;
+            }
+            .about-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Kapila Dairy Farms Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="#products">Products</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="login.html" class="btn">Login</a>
+            <a href="signup.html" class="btn">Sign Up</a>
+        </nav>
+    </header>
+    
+    <section class="page-banner">
+        <div>
+            <h1>About Kapila Dairy Farms</h1>
+            <p>Delivering fresh and pure dairy products since 2005</p>
+        </div>
+    </section>
+    
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="section-title">Our Story</h2>
+                <p>Kapila Dairy Farms began as a small family operation in 2005 when the Sharma family decided to share their high-quality milk with their local community. Starting with just 10 cows and a dream, Mr. Rajesh Sharma and his wife Sunita established Kapila Dairy in the fertile lands of rural India.</p>
+                
+                <p>Named after the divine cow Kapila from Indian mythology, our farm embodies the sacred traditions of dairy farming while embracing modern, sustainable practices. What started as a small delivery service to nearby homes has now grown into a trusted name across the region.</p>
+                
+                <p>Today, Kapila Dairy Farms manages over 200 cows and buffaloes, all kept in humane, stress-free environments to ensure the highest quality milk. Our commitment to purity, taste, and nutritional value has made us the preferred choice for thousands of families who trust us to deliver nature's goodness directly to their doorstep.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/farm.jpg" alt="Kapila Dairy Farm">
+            </div>
+        </div>
+        
+        <div>
+            <h2 class="section-title">Our Mission</h2>
+            <p>At Kapila Dairy Farms, our mission is to provide the purest and most nutritious dairy products while maintaining the highest standards of animal welfare and environmental sustainability. We believe that quality dairy begins with healthy, happy cows and responsible farming practices.</p>
+            <p>We are committed to preserving traditional dairy farming knowledge while incorporating modern technology to ensure product safety, consistency, and nutritional value. Through our direct farm-to-home delivery system, we aim to eliminate unnecessary intermediaries and ensure that our customers receive the freshest products possible.</p>
+        </div>
+        
+        <div style="margin-top: 50px;">
+            <h2 class="section-title">Our Vision</h2>
+            <p>We envision a future where every household has access to pure, farm-fresh dairy products that contribute to the health and wellbeing of families. Kapila Dairy Farms strives to be a leader in sustainable dairy farming, setting new standards for quality, animal welfare, and environmental responsibility.</p>
+            <p>We aim to expand our reach while maintaining our commitment to quality and personalized service. Through continuous innovation and community engagement, we aspire to promote the benefits of natural, unadulterated dairy products and support the livelihoods of local dairy farmers.</p>
+        </div>
+        
+        <div style="margin-top: 50px;">
+            <h2 class="section-title">Our Values</h2>
+            <div class="values-container">
+                <div class="value-card">
+                    <div class="value-icon">❤️</div>
+                    <h3>Quality</h3>
+                    <p>We never compromise on the quality and purity of our products, ensuring that every drop of milk meets the highest standards.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🐄</div>
+                    <h3>Animal Welfare</h3>
+                    <p>We treat our cows with care and respect, providing them with clean living conditions, nutritious feed, and regular veterinary care.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌱</div>
+                    <h3>Sustainability</h3>
+                    <p>We are committed to environmentally responsible farming practices that preserve natural resources for future generations.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Community</h3>
+                    <p>We value our relationship with customers and the community, working together to promote health and wellbeing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Kapila Dairy Farms. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
