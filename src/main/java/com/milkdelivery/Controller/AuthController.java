@@ -11,5 +11,10 @@ public class AuthController {
     public String showSignupPage() {
         return "signup";  // This should match signup.html in templates
     }
+    
+    @GetMapping("/login")
+    public String showLoginPage() {
+        return "login";  // This should match login.html in templates
+    }
 }
 

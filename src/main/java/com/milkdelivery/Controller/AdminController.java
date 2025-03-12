@@ -16,13 +16,13 @@ public class AdminController {
     @Autowired
     private AdminService adminService;
     
-    @PostMapping("/register")
+    @PostMapping("/registerAdmin")
     public String registerAdmin(@RequestBody Admin admin) {
         return adminService.registerAdmin(admin);
     }
 
     
-    @PostMapping("/login")
+    @PostMapping("/adminlogin")
     public String login(@RequestBody Admin admin) {
         return adminService.authenticateAdmin(admin);
     }

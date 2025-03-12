@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- Your HTML content -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,8 +117,9 @@
             <a href="#products">Products</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
-            <a href="login.html" class="btn">Login</a>
-            <a href="signup.html" class="btn">Sign Up</a>
+             <!-- Spring Boot navigation links -->
+            <a th:href="@{/login}" class="btn">Login</a>
+             <a th:href="@{/signup}" class="btn">Sign Up</a>
         </nav>
     </header>
     
